@@ -12,10 +12,10 @@ sheeet_produtos = workbook['Produtos']
 
 for linha in sheeet_produtos.iter_rows(min_row=2):
 
-    # nome_produto = linha[0].value
-    # pyperclip.copy(nome_produto)
-    # pyautogui.click(128, 167, duration=1)
-    # pyautogui.hotkey('ctrl', 'v')
+    nome_produto = linha[0].value
+    pyperclip.copy(nome_produto)
+    pyautogui.click(128, 167, duration=1)
+    pyautogui.hotkey('ctrl', 'v')
 
     descricao = linha[1].value
     pyperclip.copy(descricao)
